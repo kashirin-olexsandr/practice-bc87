@@ -1,0 +1,100 @@
+/* #region Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 48px;
+  margin: 50px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 5px solid rebeccapurple;
+  border-radius: 16px;
+}
+
+.item {
+  width: 160px;
+  height: 160px;
+
+  background-color: lightgreen;
+  color: darkgreen;
+  border: 5px solid darkgreen;
+  border-radius: 16px;
+  text-align: center;
+  line-height: 160px;
+}
+/* #endregion */
+
+/* #region Flexbox */
+:root {
+  --items: 3;
+  --indent: 30px;
+}
+.container {
+  margin-bottom: 50px;
+}
+.container,
+.container-2 {
+  /* min-height: 600px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+  /* row-gap: 60px;
+  column-gap: 37px; */
+  /* justify-content: space-between; */
+
+  /* Default properties */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* flex-wrap: nowrap; */
+  /* align-content: stretch; */
+}
+.item {
+  width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+/* .item {
+  margin-bottom: 30px;
+}
+.item:nth-last-child(-n + 5) {
+  margin: 0;
+} */
+
+.container-2 {
+  --items: 4;
+  --indent: 10px;
+
+  width: 700px;
+  margin: 0 auto;
+  border: 5px solid darkmagenta;
+  padding: 5px;
+  border-radius: 10px;
+
+  .item {
+    background-color: lightcoral;
+    border-color: darkred;
+    color: darkred;
+  }
+}
+/* #endregion */
+
+.section {
+  width: 600px;
+  background-color: lightblue;
+}
+.text {
+  width: 800px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
