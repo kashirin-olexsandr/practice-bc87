@@ -237,8 +237,14 @@ img {
   padding: 300px 40px 40px;
   border-radius: 30px;
   background: rgba(17, 17, 17, 0.4);
+
   padding: 200px 40px;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .hero-title {
   max-width: 484px;
   margin-bottom: 32px;
