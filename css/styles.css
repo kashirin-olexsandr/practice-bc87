@@ -136,6 +136,8 @@ img {
   border-color: #fff;
 }
 .btn-dark {
+  display: block;
+  margin: 0 auto;
   font-size: 18px;
   color: #111;
   border-color: #fd9222;
@@ -428,10 +430,28 @@ img {
 .reviews {
 }
 .reviews-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 49px;
+}
+.reviews .section-title {
+  margin-bottom: 91px;
 }
 .reviews-item {
+  width: calc((100% - 28px * 2) / 3);
+  position: relative;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 56px 24px 24px 24px;
+}
+.review-img {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: -42px;
 }
 .reviews-author {
+  margin-bottom: 24px;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
