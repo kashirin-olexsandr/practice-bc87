@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-phone" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M29.333 22.56v4a2.655 2.655 0 0 1-1.812 2.537 2.7 2.7 0 0 1-1.094.13 26.4 26.4 0 0 1-11.507-4.093 26 26 0 0 1-8-8 26.4 26.4 0 0 1-4.093-11.56 2.66 2.66 0 0 1 .687-2.038 2.66 2.66 0 0 1 1.967-.868h4a2.67 2.67 0 0 1 2.667 2.294 17.2 17.2 0 0 0 .933 3.747 2.68 2.68 0 0 1-.6 2.814l-1.693 1.693a21.33 21.33 0 0 0 8 8l1.693-1.693c.362-.359.82-.606 1.319-.712s1.017-.067 1.495.112c1.21.451 2.467.765 3.747.933a2.665 2.665 0 0 1 2.293 2.707z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M5.333 5.333h21.333c1.467 0 2.667 1.2 2.667 2.667v16c0 1.467-1.2 2.667-2.667 2.667H5.333A2.675 2.675 0 0 1 2.666 24V8c0-1.467 1.2-2.667 2.667-2.667"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M29.333 8 16 17.333 2.667 8"/>
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M26.667 28v-2.667A5.33 5.33 0 0 0 21.334 20H10.667a5.33 5.33 0 0 0-5.333 5.333V28M16 14.667A5.333 5.333 0 1 0 16 4a5.333 5.333 0 0 0 0 10.667"/>
+    </symbol>
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28">
+  <path stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7 7 21M7 7l14 14"/>
+</svg>
+  </defs>
+</svg>

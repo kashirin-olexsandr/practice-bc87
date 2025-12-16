@@ -497,3 +497,21 @@ img {
   color: #fff;
 }
 /* #endregion */
+
+.wrapper {
+
+}
+
+.inner-wrapper {
+  position: relative;
+
+}
+
+.form-icon {
+  position: absolute;
+  left: 24px;
+}
+
+.form-input {
+  padding-left: 62px;
+}
