@@ -584,12 +584,12 @@
 
     <div class="backdrop">
       <div class="modal-wrapper">
-        <button class="modedl-close-btn">
+        <button class="modal-close-btn">
           <svg class="btn-close-icon" width="28" height="28">
             <use href="./images/icons/symbol-defs.svg#icon-x-close"></use>
           </svg>
         </button>
-        <p>Leave a rewiev about <span class="accent-text">our chocolate</span></p>
+        <p class="modal-title">Leave a rewiev about <span class="accent-text">our chocolate</span></p>
         <form action="">
           <div class="wrapper">
             <label class="modal-label-text" for="user-name">Name</label>
@@ -618,8 +618,10 @@
               </svg>
             </div>
           </div>
-          <label for="comment">Comment</label>
-          <textarea name="comment" id="comment" placeholder="Enter text"></textarea>
+          <div class="textarea-wrap">
+          <label class="modal-label-text" for="comment">Comment</label>
+          <textarea class="textarea" name="comment" id="comment" placeholder="Enter text"></textarea>
+        </div>
         </form>
       </div>
     </div>
