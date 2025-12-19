@@ -29,7 +29,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header hide" id="home">
+    <header class="header" id="home">
       <div class="container">
         <nav class="header-nav">
           <a class="header-logo logo" href="./index.html">
@@ -106,6 +106,11 @@
             </a>
           </li>
         </ul>
+        <button class="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
       </div>
     </header>
 
@@ -293,7 +298,7 @@
         </div>
       </section>
       <!-- Products -->
-      <section class="products section">
+      <section class="products section hide">
         <div class="container">
           <h2 class="section-title">
             Our <span class="accent-text">products</span>
@@ -589,12 +594,19 @@
             <use href="./images/icons/symbol-defs.svg#icon-x-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Leave a rewiev about <span class="accent-text">our chocolate</span></p>
+        <p class="modal-title">
+          Leave a rewiev about <span class="accent-text">our chocolate</span>
+        </p>
         <form action="">
           <div class="wrapper">
             <label class="modal-label-text" for="user-name">Name</label>
             <div class="inner-wrapper">
-              <input type="text" class="form-input" name="name" id="user-name">
+              <input
+                type="text"
+                class="form-input"
+                name="name"
+                id="user-name"
+              />
               <svg class="form-icon" width="24" height="24">
                 <use href="./images/icons/symbol-defs.svg#icon-user"></use>
               </svg>
@@ -603,28 +615,118 @@
           <div class="wrapper">
             <label class="modal-label-text" for="user-email">Email</label>
             <div class="inner-wrapper">
-              <input type="email" class="form-input" name="name" id="user-email">
+              <input
+                type="email"
+                class="form-input"
+                name="name"
+                id="user-email"
+              />
               <svg class="form-icon" width="24" height="24">
                 <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
               </svg>
             </div>
           </div>
           <div class="wrapper">
-            <label class="modal-label-text" for="user-phone">Phone number</label>
+            <label class="modal-label-text" for="user-phone"
+              >Phone number</label
+            >
             <div class="inner-wrapper">
-              <input type="tel" class="form-input" name="name" id="user-phone">
+              <input
+                type="tel"
+                class="form-input"
+                name="name"
+                id="user-phone"
+              />
               <svg class="form-icon" width="24" height="24">
                 <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="textarea-wrap">
-          <label class="modal-label-text" for="comment">Comment</label>
-          <textarea class="textarea" name="comment" id="comment" placeholder="Enter text"></textarea>
-        </div>
+            <label class="modal-label-text" for="comment">Comment</label>
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
         </form>
       </div>
     </div>
-    
+
+    <div class="mobile-menu is-open">
+      <button class="mobile-menu-close-btn">
+        <svg class="mobile-menu-close-icon" width="14" height="14">
+          <use href="./images/icons/close-btn.svg"></use>
+        </svg>
+      </button>
+      <nav class="mobile-header-nav">
+        <ul class="mobile-menu">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#home">Home</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#reviews">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-socials">
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Site facebook.com"
+          >
+            <img
+              class="socials-icon"
+              src="./images/icons/facebook.svg"
+              alt="Facebook logo"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Site instagram.com"
+          >
+            <img
+              class="socials-icon"
+              src="./images/icons/instagram.svg"
+              alt="Instagram logo"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Site x.com"
+          >
+            <img
+              class="socials-icon"
+              src="./images/icons/twitter.svg"
+              alt="Twitter logo"
+              width="24"
+              height="24"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

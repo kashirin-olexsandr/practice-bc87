@@ -219,7 +219,7 @@ img {
 
 /* #region Menu styles */
 .menu {
-  display: flex;
+  display: none;
   gap: 24px;
 }
 .menu-item {
@@ -238,8 +238,16 @@ img {
 
 /* #region Socials styles */
 .socials {
-  display: flex;
+  display: none;
   gap: 14px;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+  .socials {
+    display: flex;
+  }
 }
 .socials-item {
   --size: 40px;
@@ -265,6 +273,7 @@ img {
 
 /* #region Header styles */
 .header {
+  position: relative;
 }
 .header > .container {
   display: flex;
@@ -273,11 +282,98 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  margin-right: 90px;
   flex-grow: 1;
 }
 .header-logo {
+  font-size: 14px;
+  padding: 23.5px 0;
   margin-right: auto;
+}
+@media (min-width: 768px) {
+  .header-nav {
+    margin-right: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-nav {
+    margin-right: 90px;
+  }
+  .header-logo {
+    font-size: 18px;
+    padding: 23.5px 0;
+    margin-right: auto;
+  }
+}
+.burger {
+  background-color: transparent;
+  border: none;
+  width: 28px;
+  height: 28px;
+  padding: 7px 3px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+}
+.burger-line {
+  width: 21px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #111111;
+}
+.mobile-menu.is-open {
+  padding: 136px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1823;
+  top: 0;
+  left: 0;
+}
+.mobile-menu.is-closed {
+  display: none;
+}
+.mobile-menu-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu {
+  display: block;
+}
+.mobile-menu-item {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.07;
+  margin-bottom: 24px;
+}
+.mobile-menu-item:nth-child(1) {
+  color: #fd9222;
+}
+.mobile-socials {
+  display: flex;
+  gap: 14px;
+}
+.mobile-socials-item {
+  border-radius: 10px;
+  border: 1px solid #ffffff1a;
+}
+.mobile-socials-link {
 }
 /* #endregion */
 
